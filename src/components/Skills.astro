@@ -1,0 +1,50 @@
+---
+const skills = [
+  {
+    icon: "fa-solid fa-code",
+    title: "Full-Stack Development",
+    desc: "Modern web applications with React, Astro, JavaScript/TypeScript, REST APIs, Tailwind CSS, and cloud deployments."
+  },
+  {
+    icon: "fa-solid fa-cube",
+    title: "BIM & Revit Add-in Development",
+    desc: "Developing custom add-ins and automation tools for Autodesk Revit using C# (.NET), pyRevit, and the official Revit API."
+  },
+  {
+    icon: "fa-solid fa-cloud",
+    title: "ACC & Cloud Automation",
+    desc: "Autodesk Construction Cloud (formerly Forge) API scripting in Python for automated data pipelines, model QA, and sync."
+  },
+  {
+    icon: "fa-solid fa-building",
+    title: "Civil & Structural Engineering",
+    desc: "Technical site supervision, structural design, foundation & drainage systems, and project coordination across multi-disciplinary teams."
+  }
+];
+---
+
+<section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-900 bg-slate-950">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-xs uppercase tracking-widest text-sky-400 font-bold mb-2">Capabilities</h2>
+      <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">What I Offer</h3>
+      <p class="text-slate-400 text-base sm:text-lg">
+        Cross-functional expertise uniting physical civil construction with digital software automation.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {skills.map((s) => (
+        <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/40 hover:border-slate-700 hover:bg-slate-900/80 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl mb-5">
+              <i class={s.icon}></i>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2">{s.title}</h4>
+            <p class="text-slate-400 text-sm leading-relaxed">{s.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,130 @@
+---
+const projects = [
+  {
+    title: "Marvel API Explorer",
+    year: "2021 (Fixed 2026)",
+    tag: "React & API Integration",
+    description: "Single Page Application (SPA) built with React, Material-UI, and Axios to search and explore characters consuming Marvel's Official Developer API, featuring a resilient character catalog fallback.",
+    image: "/img/marvel.png",
+    demoUrl: "https://marveltest-jsrubianoj.vercel.app/",
+    repoUrl: "https://github.com/jsrubianoj/marveltest",
+    tech: ["React", "Material-UI", "Axios", "Marvel API", "Vercel"]
+  },
+  {
+    title: "Pokédex React App",
+    year: "2021 (Updated 2026)",
+    tag: "React & State Management",
+    description: "Interactive Pokémon web application built with React, PokéAPI, Context API for favorite bookmarking, and custom client-side pagination. Deployed live on GitHub Pages via automated GitHub Actions.",
+    image: "/img/pokedex.jpg",
+    demoUrl: "https://jsrubianoj.github.io/pokedex-react",
+    repoUrl: "https://github.com/jsrubianoj/pokedex-react",
+    tech: ["React", "PokéAPI", "Context API", "GitHub Pages", "CI/CD"]
+  },
+  {
+    title: "Sneak Design",
+    year: "2021",
+    tag: "Frontend Architecture",
+    description: "Responsive web homepage translated from a Figma visual specification into clean HTML, CSS, and Vanilla JavaScript, consuming the Unsplash photography API.",
+    image: "/img/sneak.jpg",
+    demoUrl: "#!",
+    repoUrl: "https://github.com/jsrubianoj",
+    tech: ["Figma to Code", "Vanilla JS", "HTML5/CSS3", "Unsplash API"]
+  },
+  {
+    title: "Revit Add-ins & AEC Automations",
+    year: "2024 - 2026",
+    tag: "Engineering Software",
+    description: "Suite of production Autodesk Revit add-ins, custom ribbon tools, and automation libraries engineered with C# (.NET) and pyRevit for batch detail importing and wall geometry adjustments.",
+    image: "/img/portfolio-4.jpg",
+    demoUrl: "https://github.com/jsrubianoj",
+    repoUrl: "https://github.com/jsrubianoj",
+    tech: ["C# (.NET)", "Revit API", "pyRevit", "Dynamo", "Python"]
+  }
+];
+---
+
+<section id="portfolio" class="py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-900 bg-slate-900/40">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-xs uppercase tracking-widest text-sky-400 font-bold mb-2">Selected Works</h2>
+      <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">Featured Projects</h3>
+      <p class="text-slate-400 text-base sm:text-lg">
+        A collection of web applications, cloud API consumers, and structural engineering automation plugins.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      {projects.map((project) => (
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/70 overflow-hidden hover:border-slate-700 transition-all flex flex-col group shadow-xl">
+          <!-- Thumbnail Image -->
+          <div class="relative aspect-video overflow-hidden bg-slate-950">
+            <img 
+              src={project.image} 
+              alt={project.title} 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+            <div class="absolute top-4 right-4">
+              <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-900/80 backdrop-blur-md text-sky-400 border border-slate-700">
+                {project.year}
+              </span>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wider text-sky-400 mb-1">
+                {project.tag}
+              </div>
+              <h4 class="text-2xl font-bold text-white mb-3 group-hover:text-sky-400 transition-colors">
+                {project.title}
+              </h4>
+              <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                {project.description}
+              </p>
+            </div>
+
+            <div>
+              <!-- Tech tags -->
+              <div class="flex flex-wrap gap-1.5 mb-6">
+                {project.tech.map((t) => (
+                  <span class="px-2.5 py-1 rounded bg-slate-800/80 text-xs text-slate-300 font-mono">
+                    {t}
+                  </span>
+                ))}
+              </div>
+
+              <!-- Action Links -->
+              <div class="flex items-center gap-4 pt-4 border-t border-slate-800">
+                {project.demoUrl !== "#!" && (
+                  <a 
+                    href={project.demoUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 text-sm font-semibold text-white bg-sky-600 hover:bg-sky-500 px-4 py-2 rounded-lg transition-all shadow-md shadow-sky-600/20"
+                  >
+                    <span>Live Demo</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                  </a>
+                )}
+                {project.repoUrl && (
+                  <a 
+                    href={project.repoUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-white px-3 py-2 rounded-lg hover:bg-slate-800 transition-colors"
+                  >
+                    <i class="fa-brands fa-github text-base"></i>
+                    <span>Source Code</span>
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
