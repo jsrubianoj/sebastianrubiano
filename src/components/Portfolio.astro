@@ -1,11 +1,13 @@
 ---
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
 const projects = [
   {
     title: "Marvel API Explorer",
     year: "2021 (Fixed 2026)",
     tag: "React & API Integration",
     description: "Single Page Application (SPA) built with React, Material-UI, and Axios to search and explore characters consuming Marvel's Official Developer API, featuring a resilient character catalog fallback.",
-    image: "/img/marvel.png",
+    image: `${base}/img/marvel.png`,
     demoUrl: "https://marveltest-jsrubianoj.vercel.app/",
     repoUrl: "https://github.com/jsrubianoj/marveltest",
     tech: ["React", "Material-UI", "Axios", "Marvel API", "Vercel"]
@@ -15,7 +17,7 @@ const projects = [
     year: "2021 (Updated 2026)",
     tag: "React & State Management",
     description: "Interactive Pokémon web application built with React, PokéAPI, Context API for favorite bookmarking, and custom client-side pagination. Deployed live on GitHub Pages via automated GitHub Actions.",
-    image: "/img/pokedex.jpg",
+    image: `${base}/img/pokedex.jpg`,
     demoUrl: "https://jsrubianoj.github.io/pokedex-react",
     repoUrl: "https://github.com/jsrubianoj/pokedex-react",
     tech: ["React", "PokéAPI", "Context API", "GitHub Pages", "CI/CD"]
@@ -25,7 +27,7 @@ const projects = [
     year: "2021",
     tag: "Frontend Architecture",
     description: "Responsive web homepage translated from a Figma visual specification into clean HTML, CSS, and Vanilla JavaScript, consuming the Unsplash photography API.",
-    image: "/img/sneak.jpg",
+    image: `${base}/img/sneak.jpg`,
     demoUrl: "#!",
     repoUrl: "https://github.com/jsrubianoj",
     tech: ["Figma to Code", "Vanilla JS", "HTML5/CSS3", "Unsplash API"]
@@ -35,7 +37,7 @@ const projects = [
     year: "2024 - 2026",
     tag: "Engineering Software",
     description: "Suite of production Autodesk Revit add-ins, custom ribbon tools, and automation libraries engineered with C# (.NET) and pyRevit for batch detail importing and wall geometry adjustments.",
-    image: "/img/portfolio-4.jpg",
+    image: `${base}/img/portfolio-4.jpg`,
     demoUrl: "https://github.com/jsrubianoj",
     repoUrl: "https://github.com/jsrubianoj",
     tech: ["C# (.NET)", "Revit API", "pyRevit", "Dynamo", "Python"]
