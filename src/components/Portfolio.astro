@@ -23,16 +23,6 @@ const projects = [
     tech: ["React", "PokéAPI", "Context API", "GitHub Pages", "CI/CD"]
   },
   {
-    title: "Sneak Design",
-    year: "2021",
-    tag: "Frontend Architecture",
-    description: "Responsive web homepage translated from a Figma visual specification into clean HTML, CSS, and Vanilla JavaScript, consuming the Unsplash photography API.",
-    image: `${base}/img/sneak.jpg`,
-    demoUrl: "#!",
-    repoUrl: "https://github.com/jsrubianoj",
-    tech: ["Figma to Code", "Vanilla JS", "HTML5/CSS3", "Unsplash API"]
-  },
-  {
     title: "Revit Add-ins & AEC Automations",
     year: "2024 - 2026",
     tag: "Engineering Software",
@@ -55,7 +45,7 @@ const projects = [
       </p>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {projects.map((project) => (
         <div class="rounded-2xl border border-slate-800 bg-slate-900/70 overflow-hidden hover:border-slate-700 transition-all flex flex-col group shadow-xl">
           <!-- Thumbnail Image -->
