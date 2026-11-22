@@ -12,7 +12,7 @@ This portfolio has been completely modernized from its 2021 foundation into a bl
 
 - **100/100 Lighthouse Performance:** Pure static HTML/CSS generated at build time with zero unnecessary client-side JavaScript.
 - **Component-Driven Structure:** Clean Astro components for the Hero, BIM & AEC Automation, Project Showcases, Capabilities, and Contact.
-- **Privacy-First Communication:** Replaced exposed personal phone numbers with direct **Calendly 15-minute booking**, encrypted email, and GitHub links.
+- **Privacy-First Communication:** Replaced exposed personal phone numbers with direct **Cal.com 15-minute booking** (`https://cal.com/jsrubianoj`), encrypted email, and GitHub links.
 - **Automated CI/CD:** Native GitHub Actions workflow (`.github/workflows/deploy.yml`) using `@withastro/action` to automatically build and deploy changes to GitHub Pages upon pushing to `main`.
 
 ---
