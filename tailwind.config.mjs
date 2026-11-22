@@ -19,7 +19,7 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['"Ancizar Sans"', 'system-ui', '-apple-system', 'sans-serif'],
       }
     },
   },
