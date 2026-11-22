@@ -27,7 +27,7 @@ This portfolio has been completely modernized from its 2021 foundation into a bl
 
 ## 🛠 Featured Projects
 
-- **[Marvel API Explorer](https://marveltest-jsrubianoj.vercel.app/)** (React, Material-UI, Axios) — Character exploration app consuming Marvel's Official Developer API with resilient catalog fallback. [GitHub Repository](https://github.com/jsrubianoj/marveltest)
+- **[Marvel API Explorer](https://marveltest-psi.vercel.app/)** (React, Material-UI, Axios) — Character exploration app consuming Marvel's Official Developer API with resilient catalog fallback. [GitHub Repository](https://github.com/jsrubianoj/marveltest)
 - **[Pokédex React App](https://jsrubianoj.github.io/pokedex-react)** (React, PokéAPI, Context API) — Live Pokémon search and bookmarking application deployed on GitHub Pages with automated CI/CD. [GitHub Repository](https://github.com/jsrubianoj/pokedex-react)
 - **[Revit Add-ins & AEC Automation Repositories](https://github.com/jsrubianoj)** — Open-source tools, Dynamo scripts, and Revit API add-ins.
 
